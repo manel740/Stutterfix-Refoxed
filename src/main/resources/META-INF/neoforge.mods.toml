@@ -4,13 +4,15 @@ license="MIT"
 
 [[mods]]
 modId="stutterfix"
-version="1.21.1-0.2.3"
-displayName="StutterFix"
+version="1.21.1-0.2.4"
+displayName="StutterFix ReFoxed"
 description='''
 This mod limits the number of threads available for chunk generation in order to reduce stuttering.
+Ported and maintained by Manel740.
 '''
-authors="Wisecase2"
-logoFile="assets/stutterfix/icon.png"
+authors="Manel740"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/stutterfix-refoxed"
+logoFile="icon.png"
 
 [[mixins]]
 config="stutterfix.mixins.json"

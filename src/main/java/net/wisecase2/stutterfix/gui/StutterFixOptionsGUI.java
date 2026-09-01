@@ -83,8 +83,8 @@ public class StutterFixOptionsGUI extends OptionsSubScreen {
     }
 
     @Override
-    public void onClose() {
+    public void removed() {
         StutterFix.saveThread.execute(() -> { StutterFix.threadconfig.saveConfig(); });
-        super.onClose();
+        super.removed();
     }
 }

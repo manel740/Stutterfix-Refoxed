@@ -11,7 +11,8 @@
 		"client.MinecraftClientMixin",
 		"client.RemoveYieldMixin",
 		"gui.OptionsScreenMixin",
-		"gui.OptionsScreenAccessor"
+		"gui.HeaderAndFooterLayoutAccessor",
+		"gui.LinearLayoutAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1

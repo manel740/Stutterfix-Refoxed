@@ -53,8 +53,12 @@ public class ThreadConfig {
         if (Files.exists(path)) {
             try (FileReader reader = new FileReader(path.toFile())) {
                 config = GSON.fromJson(reader, ThreadConfig.class);
-            } catch (IOException e) {
-                throw new RuntimeException("Could not parse config", e);
+                if (config == null) {
+                    config = new ThreadConfig();
+                }
+            } catch (Exception e) {
+                StutterFix.LOGGER.warn("Could not parse stutterfix config, falling back to defaults.", e);
+                config = new ThreadConfig();
             }
         } else {
             config = new ThreadConfig();
