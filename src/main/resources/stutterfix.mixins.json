@@ -10,9 +10,7 @@
 	"client": [
 		"client.MinecraftClientMixin",
 		"client.RemoveYieldMixin",
-		"gui.OptionsScreenMixin",
-		"gui.HeaderAndFooterLayoutAccessor",
-		"gui.LinearLayoutAccessor"
+		"gui.OptionsScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

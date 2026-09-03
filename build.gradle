@@ -55,7 +55,6 @@ neoForge {
 }
 
 dependencies {
-    // NeoForge se resuelve automáticamente por el plugin moddev
 }
 
 tasks.withType(JavaCompile).configureEach {
